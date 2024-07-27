@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="width=device-width, initial-scale=1.0">
+    <title>Decouvrire nos game de Produits</title>
+    <script src="lauch.js"></script>
+</head>
+<body>
+       
+    <style>
+        body{
+            background-color: white;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .contenaire{
+            background-color: white;
+            width: 100%;
+            height: 100vh;
+            padding: 0 5px;
+            position: relative;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            border: 2px solid black;
+        }
+
+        .inscrire{
+            background-color: silver;
+            display: grid;
+            border: 1px solid gray;
+            border-radius: 50px;
+            box-shadow:  0px 0px 8px black;
+            width: 300px;
+            height: 400px;
+            position: absolute;
+            top: 50px;
+            transition: 1.5s;
+        }            
+
+        .inscrire:hover{
+            border: 1px solid gray;
+            box-shadow:  0px 0px 8px black;
+        }
+
+        .inscript p{
+            color: rgb(0, 174, 255);
+        }
+        a{
+            text-decoration: none;
+        }
+        .inscript input{
+            color: aqua;
+            background: white;
+            border: 2.5px solid rgb(42, 42, 77);
+            box-shadow: 1px 1px 1px 1px rgb(8, 186, 240);
+            border-radius: 10px;
+            width: 250px;
+            height: 30px;
+            transition: 0.5s;
+        }
+
+        .inscript input:hover{
+            border: 2px solid aqua;
+        }
+
+        .log input{
+            background-color: rgb(2, 255, 255);
+            border-radius: 60px;
+            width: 150px;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        .log input:hover{
+            color: rgb(72, 72, 238);
+        }
+
+    </style>
+    
+
+        <div class="contenaire">
+            <video src="video/videostoredark.mp4" muted loop autoplay width="100%" > </video>
+            <div class="inscrire">
+                
+                <div class="inscript">
+                    <h1>S'inscrire</h1>
+                    <p>Bonjour bienvenue à nouveau,vous avez manqué</p>
+  
+                    <form action="login" method="post"></form>
+                        <strong><label for="Email">Email</label></strong>
+                    <input type="email" placeholder="ezfz110gmail.com" required>
+                    <strong><label for="password">Password</label></strong>
+                    <input type="password" placeholder="Entrer le mot de passe" maxlength="8" required>
+  
+                    </form>
+                </div>
+                 
+            <div class="log">
+                <form action="achat.html" method="post"> 
+                    <a href="achat.html"><input type="submit" value="Enregistrer" name="enregitre" id="login"></a> 
+                </form>
+                <hr width="120px" style="height: 3px; background: silver; border-radius: 30px;">
+            </div>
+
+
+            </div>
+        </div>
+    
+    
+</body>
+</html>

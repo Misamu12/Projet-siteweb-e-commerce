@@ -1,0 +1,163 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.logo img{
+    padding-left: 20px;
+    width: 160px;
+    height: 160px;
+}                                            
+
+nav{
+    flex: 1px;
+    text-align: right;
+}
+
+
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 60px;
+}
+
+nav ul li a{
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 60px;
+    height: 40px;
+    text-decoration: none;
+    transition: 0.30s;
+}
+nav ul li a:hover{
+    border: 2px solid aqua;
+    color: rgb(51, 143, 196);
+}
+.main-x{
+    border: 2px solid aqua;
+    border-radius: 10px;
+    width: 60px;
+    height: 40px;
+    text-decoration: none;
+    transition: 0.30s;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 20px auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+/** cart items details **/
+
+.carte-page{
+    margin:  80px auto;
+
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: #ff523b;
+    font-weight: normal;
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width: 45px;
+    height: 35px;
+    padding: 5px;
+}
+td a{
+    color: #ff523b;
+    font-size: 12px;
+}
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+.total-price table{
+    border-top: 3px solid #ff523b;
+    width: 100%;
+    max-width: 400px;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+     text-align: right;
+}
+/*Partie du bas qui demontrera le reseau et sposort et d reconnaissance*/
+
+.your{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+    gap: 20px;
+ }
+ .your img{
+     width: 50px;
+     height: 50px;
+     border: 1px solid black;
+     border-radius: 50px;
+ }
+ 
+ .your p{
+     font-size: 20px;
+     text-decoration: dashed;
+ }
+ 
+ .footer_int{
+     display: flex;
+     margin: 50px 70px;
+ }
+ 
+ .col-5{
+     display: flex; 
+     gap: 10px;   
+ }
+ .col-5 img{
+    width: 80px;
+    height: 90px;
+ }
+ .note h1{
+     font-size: 20px;
+     color: gold;
+ }
+ .note p{
+     font-size: 17px;
+ }
+
+ /* media keyrie */
+
+ @media only screen and (max-width: 600px) {
+    .footer_int{
+        display: grid;
+    }
+    .cart-info p{
+        display: none;
+     }
+ }

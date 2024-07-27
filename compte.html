@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="width=device-width, initial-scale=1.0">
+    <title>increz-vous_Pour_Decouvrire nos game de Produits</title>
+    <script src="lauch.js"></script>
+</head>
+<body>
+       
+    <style>
+        /* 
+        border: 1px solid rgb(105, 91, 9);
+        box-shadow: 0px 0px 35px rgb(105, 91, 9);
+        */
+        body{
+            background-color: white;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .contenaire{
+            background-color: rgb(223, 223, 223);
+            width: 100%;
+            height: 100vh;
+            padding: 0 5px;
+            position: relative;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            border: 2px solid black;
+        }
+
+        .inscrire{
+            background-color: silver;
+            display: grid;
+            border: 1px solid gray;
+            border-radius: 50px;
+            box-shadow:  0px 0px 8px black;
+            width: 300px;
+            height: 500px;
+            position: absolute;
+            top: 50px;
+            transition: 1.5s;
+        }            
+
+        .inscrire:hover{
+            border: 1px solid gray;
+            box-shadow:  0px 0px 8px black;
+        }
+
+        .inscript p{
+            color: rgb(0, 174, 255);
+        }
+        
+        a{
+            text-decoration: none;
+            transition: 0.5S;
+            color: black;
+        }
+        a:hover{
+            color: rgb(0, 45, 245);
+        }
+        .password:hover{
+            color: rgb(0, 45, 245);
+        }
+        .password{
+            text-decoration: underline;
+        }
+
+        .input{
+            color: aqua;
+            background: white;
+            border: 2.5px solid rgb(42, 42, 77);
+            box-shadow: 1px 1px 1px 1px rgb(8, 186, 240);
+            border-radius: 10px;
+            width: 250px;
+            height: 30px;
+            transition: 0.5s;
+        }
+
+
+        .inscript input:hover{
+            border: 2px solid aqua;
+        }
+        .essai{
+            
+            justify-content: center;
+        }
+        .log{
+            padding-bottom: 20px;
+        }
+        
+        .log input{
+            background-color: rgb(2, 255, 255);
+            border-radius: 60px;
+            width: 150px;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        .log input:hover{
+            color: rgb(72, 72, 238);
+        }
+        .condition{
+            padding-top: 8px;
+            padding-left: 30px;
+            display: flex;
+        }
+
+        .condition p{
+            color: rgb(0, 174, 255);
+        }
+        img{
+            border-radius: 30px;
+            opacity: 0.8;
+            cursor: pointer;
+        }
+           
+
+    </style>
+    
+
+        <div class="contenaire">
+            <video src="video/videostoredark.mp4" muted loop autoplay width="100%" > </video>
+            <div class="inscrire">
+                <form method="post" action="achat.html">
+                <div class="inscript">
+                    <h1>Créer un Compte</h1>
+                    
+                     
+                    <strong><label for="name">Nom:</label></strong><br>
+                    <input class="input" type="text" placeholder="Entrer votre nom" required="required" maxlength="20 ">
+
+                    <strong><label for="prenom">Prenom:</label></strong>
+                    <input class="input" type="text" placeholder="Entrer votre Prenom" required="required" maxlength="20 ">
+
+                    <strong><label for="Email">Email:</label></strong>
+                    <input class="input" type="email" placeholder="ezfz110gmail.com" required="required">
+                    <strong><label for="password">Password:</label></strong>
+                    <input class="input" type="password" placeholder="Entrer le mot de passe" required="required" maxlength="8">
+                     <div class="condition">
+                        <input type="checkbox" required="required" id="cheked"><p id="check-codition">Accepter les termes et condition</p><br>
+                     </div>
+                </div>
+                 
+            <div class="log">
+                
+                    <input type="submit" value="valider" name="enregitre" id="envoi">
+                    <br><br>
+                </form>
+                <a class="password" href="decouvrire.html">Mot de passe oublier</a>
+                <div class="logo">
+                    <a href="#" style="color: blue;"><img src="img/facebooklogo.jpg" alt="facebook" width="45"></a>
+                    <a href="#" style="color: red;"><img src="img/instalogo.jpg" alt="instagram" width="45"></a>
+                    <a href="#" style="color: yellow;"><img src="img/logoMail.jpg" alt="misamu" width="45"></a>
+                </div>
+                
+            </div>    
+     <script>
+        var validation = document.getElementById('envoi');
+        var cheked = document.getElementById("cheked");
+        var condition_m = document.getElementById('check-codition');
+        
+        /** validation **/
+           
+        <!-- deuxieme partie -->
+        
+        validation.addEventListener('click', f_val);
+
+        function f_val(e){
+           if(cheked.validity.valueMissing) {
+            e.preventDefault();
+            condition_m.textContent = "Accepter les termes et condition";
+            condition_m.style.color = "red"
+
+           }else if(cheked.test(cheked.value) == false){
+            event.preventDefault();
+            condition_m.textContent = "Merci pour votre confiance";
+            condition_m.style.color = "black"
+           }
+           else{
+
+           }
+        }
+     </script>
+</body>
+</html>

@@ -1,0 +1,362 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{                                                                                
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    border-radius:  10px 10px 10px 10px;
+}
+
+.zeldrix{
+    overflow-x: hidden;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.logo img{
+    padding-left: 20px;
+    width: 160px;
+    height: 160px;
+}                                            
+
+nav{
+    flex: 1px;
+    text-align: right;
+}
+
+
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 60px;
+}
+
+nav ul li a{
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 60px;
+    height: 40px;
+    text-decoration: none;
+    transition: 0.30s;
+}
+nav ul li a:hover{
+    border: 2px solid aqua;
+    color: rgb(51, 143, 196);
+}
+.main-x{
+    border: 2px solid aqua;
+    border-radius: 10px;
+    width: 60px;
+    height: 40px;
+    text-decoration: none;
+    transition: 0.30s;
+}
+.svg:hover{
+    width: 60px;
+    height: 60px;
+    border-bottom: 3px solid rgb(214, 155, 18); 
+    border-radius: 35px;
+}
+svg{
+    width: 20px;
+    height: 20px;
+    color: rgb(49, 24, 0);
+    transition: transform 0.5s;
+}
+svg:hover{
+      transform: rotate(-30deg);
+}
+svg:active{
+    transform: translateX(-10deg);
+}
+
+.container{
+    max-width: 1200px;
+    margin: 20px auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.row{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    scroll-snap-align: start;
+}  
+
+ 
+.col-2{
+    flex-basis: 40%;
+    min-width: 300px;
+}
+/*stylisation de l'image 2*/
+.col-2 img{
+    width: 100%;
+    padding: 50px 0;
+}
+
+.col-2 h1{
+    font-size: 50px;
+    line-height: 65px;
+    margin: 25px;
+    color: rgb(12, 12, 12);
+}
+
+.col-2 a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 30px;
+    background:rgb(28, 150, 49);
+    color: white;
+    border-radius: 30px;
+    margin-top: 25px;
+    transition: .5s;
+}
+.col-2 a:hover{
+    background-color: rgb(82, 209, 209);
+}
+
+.col-a{
+    color: blue;
+}
+.col-a a:hover{
+    color: rgb(30, 151, 207);
+}
+
+.col-4 p{
+    padding: 0 30px;
+    color: rgb(75, 52, 18);
+    font-size: 11px;
+    transition: .9s;
+}
+#po:hover{
+    font-size: 15px;
+}
+
+.header-section{
+    margin-top: -20px;
+    background: radial-gradient(white, #fff);
+}
+
+/*style de la section categories*/
+
+.categories{
+    margin: 45px 0;
+}
+
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin: auto; 
+}
+
+.col-3 img{
+    width: 100%; 
+    border-radius: 5px;
+   }
+   
+.container h2{
+    text-align: center;
+    font-size: 2.2rem;
+    color: #353131;
+    margin: 80px 0;
+}
+
+.feature-products h2{
+    text-align: center;
+    font-size: 2.2rem;
+    color: #353131;
+    margin: 80px 0;
+}
+/*section de meilleurs categories*/
+
+.col-4 {
+    flex-basis: 10%;
+    min-width:  250px;
+    margin: 15px;
+    border: 1px solid #c5c2be;
+    border-radius: 5px;
+    background-color: #c5c2be;
+    transition: transform 0.10s;
+    
+}
+
+.col-4:hover{
+    transform: translate(-10px);
+}
+
+.col-4 img{
+    margin: 5px 13px;
+    width: 90%;
+    border-radius: 5px;
+}
+
+h3{
+    padding: 0 30px;
+}
+
+/** --
++-----------------------------------------------------------------------------------------------------------------+
+|            Partie scroll automaique: une pharse de motivation consernant toute les formres et tailles           |
++-----------------------------------------------------------------------------------------------------------------+
+-- **/
+.motivation{
+    width: 100%;
+    height: 5%;
+}
+
+.motivation marquee{
+    color: rgb(129, 63, 2);
+    background-color: rgb(247, 83, 7);
+}
+/* <!--
++------------------------------------------------+
+|             Soumettez votre prix               |
++------------------------------------------------+
+-- */
+.contenue{
+    background-color: white;
+    border: 1px solid rgb(255, 255, 255);
+    display: flex;
+    gap: 150px;
+}
+
+.big-img img{
+    margin: 30px;
+    width: 350px;
+}
+
+.caligraphie-text h1{
+    font-size: 20px;
+}
+
+.caligraphie-text h2{
+    font-size: 50px;
+    color: black;
+    text-shadow: 1px 1px 1px gray,
+                1px 2px 1px gray,
+                1px 3px 1px gray,
+                1px 4px 1px gray,
+                1px 5px 1px gray,
+                1px 6px 1px gray,
+                1px 7px 1px gray,
+                1px 8px 1px gray,
+                1px 9px 1px gray,
+                1px 10px 1px gray;
+}
+
+.caligraphie-text button{
+    margin-bottom: 10px;
+    font-size: 17px;
+    border-radius: 0 10PX 0;
+    width: 130px;
+    height: 35px;
+    background-color: rgb(105, 212, 105);
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.caligraphie-text button:hover{
+       color: white;
+       background-color: rgb(18, 172, 18);
+       box-shadow: 0px 0px 3px gray;
+       border: none;
+}
+.caligraphie-text a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+
+.caligraphie-text p{
+    color: rgb(37, 36, 36);
+}
+ 
+/* Partie du bas qui demontrera le reseau et sposort et d reconnaissance */
+
+.your{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+    gap: 20px;
+ }
+ .your img{
+     width: 50px;
+     height: 50px;
+     border: 1px solid black;
+     border-radius: 50px;
+ }
+ 
+ .your p{
+     font-size: 20px;
+     text-decoration: dashed;
+ }
+ 
+ .footer_int{
+     display: flex;
+     margin: 10px 70px;
+ }
+ 
+ .col-5{
+     display: flex; 
+     gap: 10px;   
+ }
+ .col-5 img{
+    width: 80px;
+    height: 90px;
+ }
+
+ /***/
+
+ .footer_res{
+    display: flex;
+    justify-content: center;
+    margin: 10px 390px;
+    border: 1px solid gray;
+    width: 500px;
+    height: 90px;
+    align-items: center;
+    background-color: black;
+}
+
+.cols{
+    display: flex; 
+    gap: 10px;   
+}
+.cols img{
+   width: 80px;
+   height: 80px;            
+   border: 1px solid black;
+   border-radius: 23px;
+   margin-right: 10px;
+   cursor: wait;
+}
+
+
+ /***/
+ .note h1{
+     font-size: 20px;
+     color: gold;
+ }
+ .note p{
+     font-size: 17px;
+ }
+ .footer_end{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
